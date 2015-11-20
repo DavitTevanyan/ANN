@@ -11,7 +11,10 @@ public:
     void feedForward(const vector<double> &inputVals);
     void backProp(const vector<double> &targetVals);
     void getResults(vector<double> &resultVals) const;
-    double getRecentAverageError() const { return recentAverageError_; }
+    double getRecentAverageError() const 
+	 { 
+		return recentAverageError_; 
+	 }
 
 private:
     vector<Layer> layers_; // layers_[layerNum][neuronNum]

@@ -9,7 +9,8 @@ using namespace std;
 void showVectorVals(string label, vector<double> &v)
 {
     cout << label << " ";
-    for (int i = 0; i < v.size(); ++i) {
+    for (int i = 0; i < v.size(); ++i) 
+	{
         cout << v[i] << " ";
     }
 
@@ -30,12 +31,14 @@ int main()
     vector<double> inputVals, targetVals, resultVals;
     int trainingPass = 0;
 
-    while (!trainData.isEof()) {
+    while (!trainData.isEof()) 
+   {
         ++trainingPass;
         cout << endl << "Pass " << trainingPass;
 
         // Get new input data and feed it forward:
-        if (trainData.getNextInputs(inputVals) != topology[0]) {
+        if (trainData.getNextInputs(inputVals) != topology[0]) 
+		{
             break;
         }
         showVectorVals(": Inputs:", inputVals);

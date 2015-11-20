@@ -8,7 +8,8 @@ void Neuron::updateInputWeights(Layer &prevLayer)
     // The weights to be updated are in the Connection container
     // in the neurons in the preceding layer
 
-    for (int n = 0; n < prevLayer.size(); ++n) {
+    for (int n = 0; n < prevLayer.size(); ++n) 
+	{
         Neuron &neuron = prevLayer[n];
         double oldDeltaWeight = neuron.outputWeights_[myIndex_].deltaWeight;
 
@@ -32,7 +33,8 @@ double Neuron::sumDOW(const Layer &nextLayer) const
 
     // Sum our contributions of the errors at the nodes we feed.
 
-    for (int n = 0; n < nextLayer.size() - 1; ++n) {
+    for (int n = 0; n < nextLayer.size() - 1; ++n) 
+	{
         sum += outputWeights_[n].weight * nextLayer[n].gradient_;
     }
 
@@ -71,7 +73,8 @@ void Neuron::feedForward(const Layer &prevLayer)
     // Sum the previous layer's outputs (which are our inputs)
     // Include the bias node from the previous layer.
 
-    for (int n = 0; n < prevLayer.size(); ++n) {
+    for (int n = 0; n < prevLayer.size(); ++n) 
+	{
         sum += prevLayer[n].getOutputVal() *
             prevLayer[n].outputWeights_[myIndex_].weight;
     }
@@ -81,7 +84,8 @@ void Neuron::feedForward(const Layer &prevLayer)
 
 Neuron::Neuron(int numOutputs, int myIndex)
 {
-    for (int c = 0; c < numOutputs; ++c) {
+    for (int c = 0; c < numOutputs; ++c) 
+	{
         outputWeights_.push_back(Connection());
         outputWeights_.back().weight = randomWeight();
     }
