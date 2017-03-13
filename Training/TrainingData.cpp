@@ -2,7 +2,7 @@
 #include <sstream>
 
 using namespace ANN;
-
+// test - ignore
 namespace ANN {
 
 std::vector<Sample> getTrainSet(const std::string& fileName)
