@@ -1,5 +1,5 @@
 # BolzmANN
-Neural network in C++ by and for the participants of the [MASIS Programming Class](http://www.masisclass.com).
+Neural network in C++ by and for the participants of the [MASIS Programming Class](http://www.masisclass.com), named after the [Boltzmann brain](https://en.wikipedia.org/wiki/Boltzmann_brain).
 
 All network logic is in C++. Some tests are in Python.
 
