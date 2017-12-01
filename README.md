@@ -5,7 +5,7 @@ All network logic is in C++. Some tests are in Python.
 
 # Note to Contributors
 BolzmANN is developed using the following environment, tools and technologies:
-- Visual Studio 2017
+- [Visual Studio](https://www.visualstudio.com/vs/community/) (always latest, currently 2017)
 - C++17
 - [Cppcheck](http://cppcheck.sourceforge.net/)
 - [Cppcheck Visual Studio add-in](https://marketplace.visualstudio.com/items?itemName=Alexium.Cppcheckadd-in)
