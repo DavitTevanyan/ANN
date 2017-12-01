@@ -17,4 +17,14 @@ Before committing, make sure that:
 - Cppcheck ends with **zero warnings** for every project.
 - Run produces **expected results**.
 - All functional tests **PASS**.
+- Code patterns rhyme, meaning this:
+```C++
+axon_[n].deltaWeight = newDeltaWeight;
+axon_[n].weight     += newDeltaWeight;
+```
+ instead of this:
+```C++
+axon_[n].deltaWeight = newDeltaWeight;
+axon_[n].weight += newDeltaWeight;
+```
   
