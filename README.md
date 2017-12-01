@@ -17,7 +17,7 @@ Before committing, make sure that:
 - Cppcheck ends with **zero warnings** for every project.
 - Run produces **expected results**.
 - All functional tests **PASS**.
-- All code patterns **rhyme**, meaning this:
+- All code patterns **rhyme** as much as **possible** and **within reason**, meaning this:
 ```C++
 axon_[n].deltaWeight = newDeltaWeight;
 axon_[n].weight     += newDeltaWeight;
